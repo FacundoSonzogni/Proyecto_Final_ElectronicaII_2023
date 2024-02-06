@@ -198,22 +198,22 @@ Contador_Johnson : contador_johnson generic map (N => 4) port map (
     );
 
 ingresar_digito <= '1' when (columna = "001" and fila = "0001") else
-                <= '0';
+                   '0';
 
 remover_digito <= '1' when (columna = "100" and fila = "0001") else
-               <= '0';
+                  '0';
 
 digito_elegido <= "0000" when (columna = "010" and fila = "0001") else
-               <= "0001" when (columna = "100" and fila = "1000") else
-               <= "0010" when (columna = "010" and fila = "1000") else
-               <= "0011" when (columna = "001" and fila = "1000") else
-               <= "0100" when (columna = "100" and fila = "0100") else
-               <= "0101" when (columna = "010" and fila = "0100") else
-               <= "0110" when (columna = "001" and fila = "0100") else
-               <= "0111" when (columna = "100" and fila = "0010") else
-               <= "1000" when (columna = "010" and fila = "0010") else
-               <= "1001" when (columna = "001" and fila = "0010") else
-               <= "1111";         
+                  "0001" when (columna = "100" and fila = "1000") else
+                  "0010" when (columna = "010" and fila = "1000") else
+                  "0011" when (columna = "001" and fila = "1000") else
+                  "0100" when (columna = "100" and fila = "0100") else
+                  "0101" when (columna = "010" and fila = "0100") else
+                  "0110" when (columna = "001" and fila = "0100") else
+                  "0111" when (columna = "100" and fila = "0010") else
+                  "1000" when (columna = "010" and fila = "0010") else
+                  "1001" when (columna = "001" and fila = "0010") else
+                  "1111";         
 end architecture;
 
 --------------- INGRESO_NUMERO ---------------------
